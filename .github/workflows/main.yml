@@ -33,6 +33,10 @@ jobs:
       - name: Verify Java
         run: java -version
 
+      # Generate JaCoCo Report
+      - name: JaCoCo Report
+        run: mvn jacoco:report
+
       # Setup sonar-scanner
       - name: Setup SonarQube
         uses: warchant/setup-sonar-scanner@v7
