@@ -28,6 +28,7 @@ jobs:
         with:
           distribution: temurin # Always See the Supported distributions for Available Hosting
           java-version: "21"
+          cache: maven
 
       # Verify the Java Version
       - name: Verify Java
